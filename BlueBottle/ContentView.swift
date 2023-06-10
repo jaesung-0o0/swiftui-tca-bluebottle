@@ -13,34 +13,22 @@ enum Tab {
     case menu
 }
 
-@MainActor
-class Root: ObservableObject {
-    @Published var selectedTab: Tab = .home
-}
-
 struct ContentView: View {
     let store: StoreOf<RootReducer>
     
     var body: some View {
-        WithViewStore(self.store, observe: { $0 }) { viewStore in
-            switch viewStore.selectedTab {
+        SwitchStore(self.store) { state in
+            switch state {
             case .home:
-                HomeView(
-                    store: self.store.scope(
-                        state: \.home,
-                        action: RootReducer.Action.home
-                    )
-                )
-            case .menu:
-                NavigationStack {
-                    MenuView(
-                        store: self.store.scope(
-                            state: \.menu,
-                            action: RootReducer.Action.menu
-                        )
-                    )
+                CaseLet(/RootReducer.State.home, action: RootReducer.Action.home) { homeStore in
+                    HomeView(store: homeStore)
                 }
-                
+            case .menu:
+                CaseLet(/RootReducer.State.menu, action: RootReducer.Action.menu) { menuStore in
+                    NavigationStack {
+                        MenuView(store: menuStore)
+                    }
+                }
             }
         }
     }
