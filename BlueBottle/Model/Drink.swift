@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Drink: Identifiable {
+struct Drink: Identifiable, Equatable {
     let id = UUID()
     let name: String
     let subtitle: String

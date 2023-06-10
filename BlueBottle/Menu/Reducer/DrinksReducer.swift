@@ -6,24 +6,35 @@
 //
 
 import Foundation
-import OrderedCollections
 import ComposableArchitecture
 
 struct DrinksReducer: Reducer {
     struct State: Equatable {
         var drinks: IdentifiedArrayOf<DrinkReducer.State> = []
-        var selectedDrink: OrderedSet<DrinkReducer.State.ID> = []
+        var selectedCategory: String = ""
+        var selectedDrink: Set<DrinkReducer.State.ID> = []
+        
+        init() {
+            self.drinks = IdentifiedArrayOf(
+                uniqueElements: Drink.fetchDrinks().compactMap { DrinkReducer.State(drink: $0) }
+            )
+        }
     }
     
     enum Action {
+        case categoryItemTapped(String)
         case drink(id: DrinkReducer.State.ID, action: DrinkReducer.Action)
     }
     
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
+            case let .categoryItemTapped(categoryID):
+                state.selectedCategory = categoryID
+                // TODO: filter drinks
+                return .none
             case let .drink(id: id, action: .drinkTapped):
-                state.selectedDrink.append(id)
+                state.selectedDrink.insert(id)
                 return .none
             }
         }
@@ -32,3 +43,4 @@ struct DrinksReducer: Reducer {
         }
     }
 }
+

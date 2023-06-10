@@ -21,6 +21,10 @@
 		A93AE83B2A342D6200AFFF9C /* DrinkReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE83A2A342D6200AFFF9C /* DrinkReducer.swift */; };
 		A93AE83E2A342EB500AFFF9C /* DrinksReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE83D2A342EB500AFFF9C /* DrinksReducer.swift */; };
 		A93AE8402A34752200AFFF9C /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE83F2A34752200AFFF9C /* AppReducer.swift */; };
+		A93AE8422A347F9B00AFFF9C /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8412A347F9B00AFFF9C /* HomeReducer.swift */; };
+		A93AE8452A347FC800AFFF9C /* MenuReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8442A347FC800AFFF9C /* MenuReducer.swift */; };
+		A93AE8472A34831600AFFF9C /* CafesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8462A34831600AFFF9C /* CafesReducer.swift */; };
+		A93AE8492A34831D00AFFF9C /* CafeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8482A34831D00AFFF9C /* CafeReducer.swift */; };
 		A9CE66242A2BFCC60085444D /* BlueBottleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66232A2BFCC60085444D /* BlueBottleApp.swift */; };
 		A9CE66262A2BFCC60085444D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66252A2BFCC60085444D /* ContentView.swift */; };
 		A9CE66282A2BFCC70085444D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CE66272A2BFCC70085444D /* Assets.xcassets */; };
@@ -65,6 +69,10 @@
 		A93AE83A2A342D6200AFFF9C /* DrinkReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkReducer.swift; sourceTree = "<group>"; };
 		A93AE83D2A342EB500AFFF9C /* DrinksReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksReducer.swift; sourceTree = "<group>"; };
 		A93AE83F2A34752200AFFF9C /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		A93AE8412A347F9B00AFFF9C /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
+		A93AE8442A347FC800AFFF9C /* MenuReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuReducer.swift; sourceTree = "<group>"; };
+		A93AE8462A34831600AFFF9C /* CafesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesReducer.swift; sourceTree = "<group>"; };
+		A93AE8482A34831D00AFFF9C /* CafeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeReducer.swift; sourceTree = "<group>"; };
 		A9CE66202A2BFCC60085444D /* BlueBottle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueBottle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CE66232A2BFCC60085444D /* BlueBottleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBottleApp.swift; sourceTree = "<group>"; };
 		A9CE66252A2BFCC60085444D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,8 +140,8 @@
 		A93AE8302A32188E00AFFF9C /* Cafe */ = {
 			isa = PBXGroup;
 			children = (
-				A93AE8332A33AA5D00AFFF9C /* CafeRow.swift */,
-				A93AE8352A33AF4300AFFF9C /* CafeList.swift */,
+				A93AE84A2A348DD600AFFF9C /* List */,
+				A93AE84B2A348DDC00AFFF9C /* Row */,
 			);
 			path = Cafe;
 			sourceTree = "<group>";
@@ -143,8 +151,36 @@
 			children = (
 				A93AE83A2A342D6200AFFF9C /* DrinkReducer.swift */,
 				A93AE83D2A342EB500AFFF9C /* DrinksReducer.swift */,
+				A93AE8442A347FC800AFFF9C /* MenuReducer.swift */,
 			);
 			path = Reducer;
+			sourceTree = "<group>";
+		};
+		A93AE8432A347FB900AFFF9C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A91214BB2A2F1C6600BAC86F /* HomeView.swift */,
+				A93AE8412A347F9B00AFFF9C /* HomeReducer.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A93AE84A2A348DD600AFFF9C /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A93AE8462A34831600AFFF9C /* CafesReducer.swift */,
+				A93AE8352A33AF4300AFFF9C /* CafeList.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A93AE84B2A348DDC00AFFF9C /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				A93AE8482A34831D00AFFF9C /* CafeReducer.swift */,
+				A93AE8332A33AA5D00AFFF9C /* CafeRow.swift */,
+			);
+			path = Row;
 			sourceTree = "<group>";
 		};
 		A9CE66172A2BFCC60085444D = {
@@ -171,9 +207,9 @@
 			isa = PBXGroup;
 			children = (
 				A9CE66232A2BFCC60085444D /* BlueBottleApp.swift */,
-				A9CE66252A2BFCC60085444D /* ContentView.swift */,
-				A91214BB2A2F1C6600BAC86F /* HomeView.swift */,
 				A93AE83F2A34752200AFFF9C /* AppReducer.swift */,
+				A9CE66252A2BFCC60085444D /* ContentView.swift */,
+				A93AE8432A347FB900AFFF9C /* Home */,
 				A93AE8302A32188E00AFFF9C /* Cafe */,
 				A93AE82B2A30C29700AFFF9C /* Menu */,
 				A93AE8262A30BF5F00AFFF9C /* Model */,
@@ -355,11 +391,15 @@
 				A9CE664E2A2C05730085444D /* OrderView.swift in Sources */,
 				A93AE83E2A342EB500AFFF9C /* DrinksReducer.swift in Sources */,
 				A93AE8362A33AF4300AFFF9C /* CafeList.swift in Sources */,
+				A93AE8422A347F9B00AFFF9C /* HomeReducer.swift in Sources */,
 				A9CE66502A2C09A10085444D /* CupSelector.swift in Sources */,
+				A93AE8472A34831600AFFF9C /* CafesReducer.swift in Sources */,
 				A93AE82F2A30C2DE00AFFF9C /* CategorySelector.swift in Sources */,
+				A93AE8492A34831D00AFFF9C /* CafeReducer.swift in Sources */,
 				A93AE8322A339E3400AFFF9C /* Cafe.swift in Sources */,
 				A91214C02A2F20A700BAC86F /* MenuView.swift in Sources */,
 				A93AE8342A33AA5D00AFFF9C /* CafeRow.swift in Sources */,
+				A93AE8452A347FC800AFFF9C /* MenuReducer.swift in Sources */,
 				A9CE66262A2BFCC60085444D /* ContentView.swift in Sources */,
 				A93AE82A2A30C28400AFFF9C /* DrinkRow.swift in Sources */,
 				A9CE66522A2C0C670085444D /* MyCardView.swift in Sources */,

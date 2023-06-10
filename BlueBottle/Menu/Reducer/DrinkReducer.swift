@@ -10,13 +10,8 @@ import ComposableArchitecture
 
 struct DrinkReducer: Reducer {
     struct State: Equatable, Identifiable {
-        let id: UUID
-        var name = ""
-        var subtitle = ""
-        var imageURL = ""
-        var description = ""
-        var preparation = ""
-        var calories = ""
+        var id: UUID { drink.id }
+        let drink: Drink
     }
     
     enum Action {

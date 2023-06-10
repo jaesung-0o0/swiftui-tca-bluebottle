@@ -9,9 +9,7 @@ import SwiftUI
 import ComposableArchitecture
 
 struct MenuView: View {
-    @State private var selectedCafe: Cafe?
     @State private var selectedCategory: String = "추천"
-    @State private var isCafeListPresented: Bool = false
     
     let store: StoreOf<MenuReducer>
     
@@ -32,10 +30,10 @@ struct MenuView: View {
                 ToolbarItem(placement: .principal) {
                     VStack(spacing: 4) {
                         Button {
-                            isCafeListPresented.toggle()
+                            viewStore.send(.cafePresenterButtonTapped)
                         } label: {
                             HStack {
-                                Text(selectedCafe?.name ?? "카페를 선택해주세요")
+                                Text(viewStore.selectedCafe?.name ?? "카페를 선택해주세요")
                                     .font(.title3.bold())
                                 
                                 Image(systemName: "chevron.down")
@@ -50,9 +48,14 @@ struct MenuView: View {
                     }
                 }
             }
-            .sheet(isPresented: $isCafeListPresented) {
+            .sheet(
+                store: store.scope(
+                    state: \.$cafeSelection,
+                    action: { .cafeSelection($0) }
+                )
+            ) { cafesStore in
                 NavigationStack {
-                    CafeList(selectedCafe: $selectedCafe)
+                    CafeList(store: cafesStore)
                 }
             }
         }

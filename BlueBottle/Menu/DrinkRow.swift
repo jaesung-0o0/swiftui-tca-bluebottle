@@ -12,7 +12,7 @@ struct DrinkRow: View {
     let store: StoreOf<DrinkReducer>
     
     var body: some View {
-        WithViewStore(self.store, observe: { $0 }) { viewStore in
+        WithViewStore(self.store, observe: \.drink) { viewStore in
             ZStack(alignment: .top) {
                 AsyncImage(url: URL(string: viewStore.imageURL)) { image in
                     image
