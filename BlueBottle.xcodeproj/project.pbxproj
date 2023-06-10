@@ -20,6 +20,7 @@
 		A93AE8392A342C8900AFFF9C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A93AE8382A342C8900AFFF9C /* ComposableArchitecture */; };
 		A93AE83B2A342D6200AFFF9C /* DrinkReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE83A2A342D6200AFFF9C /* DrinkReducer.swift */; };
 		A93AE83E2A342EB500AFFF9C /* DrinksReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE83D2A342EB500AFFF9C /* DrinksReducer.swift */; };
+		A93AE8402A34752200AFFF9C /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE83F2A34752200AFFF9C /* AppReducer.swift */; };
 		A9CE66242A2BFCC60085444D /* BlueBottleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66232A2BFCC60085444D /* BlueBottleApp.swift */; };
 		A9CE66262A2BFCC60085444D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66252A2BFCC60085444D /* ContentView.swift */; };
 		A9CE66282A2BFCC70085444D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CE66272A2BFCC70085444D /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		A93AE8352A33AF4300AFFF9C /* CafeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeList.swift; sourceTree = "<group>"; };
 		A93AE83A2A342D6200AFFF9C /* DrinkReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkReducer.swift; sourceTree = "<group>"; };
 		A93AE83D2A342EB500AFFF9C /* DrinksReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksReducer.swift; sourceTree = "<group>"; };
+		A93AE83F2A34752200AFFF9C /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		A9CE66202A2BFCC60085444D /* BlueBottle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueBottle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CE66232A2BFCC60085444D /* BlueBottleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBottleApp.swift; sourceTree = "<group>"; };
 		A9CE66252A2BFCC60085444D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				A9CE66232A2BFCC60085444D /* BlueBottleApp.swift */,
 				A9CE66252A2BFCC60085444D /* ContentView.swift */,
 				A91214BB2A2F1C6600BAC86F /* HomeView.swift */,
+				A93AE83F2A34752200AFFF9C /* AppReducer.swift */,
 				A93AE8302A32188E00AFFF9C /* Cafe */,
 				A93AE82B2A30C29700AFFF9C /* Menu */,
 				A93AE8262A30BF5F00AFFF9C /* Model */,
@@ -362,6 +365,7 @@
 				A9CE66522A2C0C670085444D /* MyCardView.swift in Sources */,
 				A91214BE2A2F209900BAC86F /* DrinkList.swift in Sources */,
 				A93AE8282A30BF6C00AFFF9C /* Drink.swift in Sources */,
+				A93AE8402A34752200AFFF9C /* AppReducer.swift in Sources */,
 				A9CE66242A2BFCC60085444D /* BlueBottleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

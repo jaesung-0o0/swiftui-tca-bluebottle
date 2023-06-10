@@ -6,13 +6,25 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct DrinkList: View {
+    let store: StoreOf<DrinksReducer>
+    
     var body: some View {
-        List(Drink.fetchDrinks()) {
-            DrinkRow(drink: $0)
-                .listRowSeparator(.hidden)
+        WithViewStore(self.store, observe: { $0 }) { viewStore in
+            List {
+                ForEachStore(
+                    store.scope(
+                        state: \.drinks,
+                        action: DrinksReducer.Action.drink
+                    )
+                ) {
+                    DrinkRow(store: $0)
+                        .listRowSeparator(.hidden)
+                }
+            }
+            .listStyle(.plain)
         }
-        .listStyle(.plain)
     }
 }

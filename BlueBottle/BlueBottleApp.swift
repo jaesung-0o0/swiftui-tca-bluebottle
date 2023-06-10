@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct BlueBottleApp: App {
-    @StateObject var root = Root()
-    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(root)
+            ContentView(
+                store: .init(
+                    initialState: .init(),
+                    reducer: { RootReducer()._printChanges() }
+                )
+            )
         }
     }
 }

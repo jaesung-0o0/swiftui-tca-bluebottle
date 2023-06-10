@@ -6,47 +6,44 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct DrinkRow: View {
-    let drink: Drink
+    let store: StoreOf<DrinkReducer>
     
     var body: some View {
-        ZStack(alignment: .top) {
-            AsyncImage(url: URL(string: drink.imageURL)) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(
-                        width: UIScreen.main.bounds.width,
-                        height: UIScreen.main.bounds.width
-                    )
-                    .clipped()
-            } placeholder: {
-                Color.secondary.opacity(0.2)
-                    .frame(
-                        width: UIScreen.main.bounds.width,
-                        height: UIScreen.main.bounds.width
-                    )
-                    .clipped()
-            }
-            
-            VStack(spacing: 12) {
-                Text(drink.name)
-                    .font(.headline)
+        WithViewStore(self.store, observe: { $0 }) { viewStore in
+            ZStack(alignment: .top) {
+                AsyncImage(url: URL(string: viewStore.imageURL)) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(
+                            width: UIScreen.main.bounds.width,
+                            height: UIScreen.main.bounds.width
+                        )
+                        .clipped()
+                } placeholder: {
+                    Color.secondary.opacity(0.2)
+                        .frame(
+                            width: UIScreen.main.bounds.width,
+                            height: UIScreen.main.bounds.width
+                        )
+                        .clipped()
+                }
                 
-                Text(drink.subtitle)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.secondary)
-                
-//                Text(drink.description)
-//
-//                Text("운영시간: 매일 08:30 - 19:00")
-//
-//                Text("대설 및 태풍 등의 자연재해 시, 단축 영업 또는 임시 휴무")
+                VStack(spacing: 12) {
+                    Text(viewStore.name)
+                        .font(.headline)
+                    
+                    Text(viewStore.subtitle)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.secondary)
+                }
+                .font(.subheadline)
+                .padding(.top, 20)
+                .padding(.horizontal, 12)
             }
-            .font(.subheadline)
-            .padding(.top, 20)
-            .padding(.horizontal, 12)
         }
     }
 }

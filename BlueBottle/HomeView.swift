@@ -6,36 +6,39 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct HomeView: View, PreviewProvider {
-    @EnvironmentObject var root: Root
+    let store: StoreOf<HomeReducer>
     
     var body: some View {
-        VStack(spacing: 0) {
-            Image("photo.cafe")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: UIScreen.main.bounds.width)
-                .clipped() // animation: move right to left slowly
-            
-            Button {
-                root.selectedTab = .menu
-            } label: {
-                Text("주문 시작하기")
-                    .foregroundColor(Color(.systemBackground))
-                    .padding(.vertical, 32)
-                    .padding(.bottom, 32)
-                    .background {
-                        Color("bluebottle.blue")
-                            .frame(width: UIScreen.main.bounds.width)
-                    }
+        WithViewStore(self.store, observe: { $0 }) { viewStore in
+            VStack(spacing: 0) {
+                Image("photo.cafe")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: UIScreen.main.bounds.width)
+                    .clipped() // animation: move right to left slowly
+                
+                Button {
+                    viewStore.send(.orderButtonTapped)
+                } label: {
+                    Text("주문 시작하기")
+                        .foregroundColor(Color(.systemBackground))
+                        .padding(.vertical, 32)
+                        .padding(.bottom, 32)
+                        .background {
+                            Color("bluebottle.blue")
+                                .frame(width: UIScreen.main.bounds.width)
+                        }
+                }
+                .buttonStyle(.plain)
             }
-            .buttonStyle(.plain)
+            .ignoresSafeArea(edges: [.vertical])
         }
-        .ignoresSafeArea(edges: [.vertical])
     }
     static var previews: some View {
-        Self()
+        Self(store: Store(initialState: .init(), reducer: { HomeReducer() }))
 //            .previewLayout(.sizeThatFits)
     }
 }

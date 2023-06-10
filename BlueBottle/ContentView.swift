@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 enum Tab {
     case home
@@ -18,15 +19,28 @@ class Root: ObservableObject {
 }
 
 struct ContentView: View {
-    @EnvironmentObject var root: Root
+    let store: StoreOf<RootReducer>
     
     var body: some View {
-        switch root.selectedTab {
-        case .home:
-            HomeView()
-        case .menu:
-            NavigationStack {
-                MenuView()
+        WithViewStore(self.store, observe: { $0 }) { viewStore in
+            switch viewStore.selectedTab {
+            case .home:
+                HomeView(
+                    store: self.store.scope(
+                        state: \.home,
+                        action: RootReducer.Action.home
+                    )
+                )
+            case .menu:
+                NavigationStack {
+                    MenuView(
+                        store: self.store.scope(
+                            state: \.menu,
+                            action: RootReducer.Action.menu
+                        )
+                    )
+                }
+                
             }
         }
     }
@@ -34,6 +48,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(store: .init(
+            initialState: .init(),
+            reducer: { RootReducer() })
+        )
     }
 }
