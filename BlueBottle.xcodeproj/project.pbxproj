@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A91214BC2A2F1C6600BAC86F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91214BB2A2F1C6600BAC86F /* HomeView.swift */; };
+		A91214BE2A2F209900BAC86F /* DrinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91214BD2A2F209900BAC86F /* DrinkList.swift */; };
+		A91214C02A2F20A700BAC86F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91214BF2A2F20A700BAC86F /* MenuView.swift */; };
+		A93AE8282A30BF6C00AFFF9C /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8272A30BF6C00AFFF9C /* Drink.swift */; };
+		A93AE82A2A30C28400AFFF9C /* DrinkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8292A30C28400AFFF9C /* DrinkRow.swift */; };
+		A93AE82D2A30C2BC00AFFF9C /* MenuCateogyColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE82C2A30C2BC00AFFF9C /* MenuCateogyColumn.swift */; };
+		A93AE82F2A30C2DE00AFFF9C /* CategorySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE82E2A30C2DE00AFFF9C /* CategorySelector.swift */; };
+		A93AE8322A339E3400AFFF9C /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8312A339E3400AFFF9C /* Cafe.swift */; };
+		A93AE8342A33AA5D00AFFF9C /* CafeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8332A33AA5D00AFFF9C /* CafeRow.swift */; };
+		A93AE8362A33AF4300AFFF9C /* CafeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8352A33AF4300AFFF9C /* CafeList.swift */; };
+		A93AE8392A342C8900AFFF9C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A93AE8382A342C8900AFFF9C /* ComposableArchitecture */; };
+		A93AE83B2A342D6200AFFF9C /* DrinkReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE83A2A342D6200AFFF9C /* DrinkReducer.swift */; };
+		A93AE83E2A342EB500AFFF9C /* DrinksReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE83D2A342EB500AFFF9C /* DrinksReducer.swift */; };
+		A9CE66242A2BFCC60085444D /* BlueBottleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66232A2BFCC60085444D /* BlueBottleApp.swift */; };
+		A9CE66262A2BFCC60085444D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66252A2BFCC60085444D /* ContentView.swift */; };
+		A9CE66282A2BFCC70085444D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CE66272A2BFCC70085444D /* Assets.xcassets */; };
+		A9CE662B2A2BFCC70085444D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CE662A2A2BFCC70085444D /* Preview Assets.xcassets */; };
+		A9CE66352A2BFCC70085444D /* BlueBottleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66342A2BFCC70085444D /* BlueBottleTests.swift */; };
+		A9CE663F2A2BFCC70085444D /* BlueBottleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE663E2A2BFCC70085444D /* BlueBottleUITests.swift */; };
+		A9CE66412A2BFCC70085444D /* BlueBottleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66402A2BFCC70085444D /* BlueBottleUITestsLaunchTests.swift */; };
+		A9CE664E2A2C05730085444D /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE664D2A2C05730085444D /* OrderView.swift */; };
+		A9CE66502A2C09A10085444D /* CupSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE664F2A2C09A10085444D /* CupSelector.swift */; };
+		A9CE66522A2C0C670085444D /* MyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66512A2C0C670085444D /* MyCardView.swift */; };
+		A9CE66542A2C8E350085444D /* CoffeebeanSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66532A2C8E350085444D /* CoffeebeanSelector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9CE66312A2BFCC70085444D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9CE66182A2BFCC60085444D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CE661F2A2BFCC60085444D;
+			remoteInfo = BlueBottle;
+		};
+		A9CE663B2A2BFCC70085444D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9CE66182A2BFCC60085444D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CE661F2A2BFCC60085444D;
+			remoteInfo = BlueBottle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A91214BB2A2F1C6600BAC86F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A91214BD2A2F209900BAC86F /* DrinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkList.swift; sourceTree = "<group>"; };
+		A91214BF2A2F20A700BAC86F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		A93AE8272A30BF6C00AFFF9C /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		A93AE8292A30C28400AFFF9C /* DrinkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRow.swift; sourceTree = "<group>"; };
+		A93AE82C2A30C2BC00AFFF9C /* MenuCateogyColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCateogyColumn.swift; sourceTree = "<group>"; };
+		A93AE82E2A30C2DE00AFFF9C /* CategorySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelector.swift; sourceTree = "<group>"; };
+		A93AE8312A339E3400AFFF9C /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
+		A93AE8332A33AA5D00AFFF9C /* CafeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRow.swift; sourceTree = "<group>"; };
+		A93AE8352A33AF4300AFFF9C /* CafeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeList.swift; sourceTree = "<group>"; };
+		A93AE83A2A342D6200AFFF9C /* DrinkReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkReducer.swift; sourceTree = "<group>"; };
+		A93AE83D2A342EB500AFFF9C /* DrinksReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksReducer.swift; sourceTree = "<group>"; };
+		A9CE66202A2BFCC60085444D /* BlueBottle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueBottle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CE66232A2BFCC60085444D /* BlueBottleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBottleApp.swift; sourceTree = "<group>"; };
+		A9CE66252A2BFCC60085444D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9CE66272A2BFCC70085444D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9CE662A2A2BFCC70085444D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9CE66302A2BFCC70085444D /* BlueBottleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueBottleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CE66342A2BFCC70085444D /* BlueBottleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBottleTests.swift; sourceTree = "<group>"; };
+		A9CE663A2A2BFCC70085444D /* BlueBottleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueBottleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CE663E2A2BFCC70085444D /* BlueBottleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBottleUITests.swift; sourceTree = "<group>"; };
+		A9CE66402A2BFCC70085444D /* BlueBottleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBottleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9CE664D2A2C05730085444D /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		A9CE664F2A2C09A10085444D /* CupSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupSelector.swift; sourceTree = "<group>"; };
+		A9CE66512A2C0C670085444D /* MyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardView.swift; sourceTree = "<group>"; };
+		A9CE66532A2C8E350085444D /* CoffeebeanSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeebeanSelector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9CE661D2A2BFCC60085444D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93AE8392A342C8900AFFF9C /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CE662D2A2BFCC70085444D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CE66372A2BFCC70085444D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A93AE8262A30BF5F00AFFF9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A93AE8272A30BF6C00AFFF9C /* Drink.swift */,
+				A93AE8312A339E3400AFFF9C /* Cafe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A93AE82B2A30C29700AFFF9C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A93AE83C2A342D6A00AFFF9C /* Reducer */,
+				A91214BD2A2F209900BAC86F /* DrinkList.swift */,
+				A93AE8292A30C28400AFFF9C /* DrinkRow.swift */,
+				A91214BF2A2F20A700BAC86F /* MenuView.swift */,
+				A93AE82C2A30C2BC00AFFF9C /* MenuCateogyColumn.swift */,
+				A93AE82E2A30C2DE00AFFF9C /* CategorySelector.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		A93AE8302A32188E00AFFF9C /* Cafe */ = {
+			isa = PBXGroup;
+			children = (
+				A93AE8332A33AA5D00AFFF9C /* CafeRow.swift */,
+				A93AE8352A33AF4300AFFF9C /* CafeList.swift */,
+			);
+			path = Cafe;
+			sourceTree = "<group>";
+		};
+		A93AE83C2A342D6A00AFFF9C /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				A93AE83A2A342D6200AFFF9C /* DrinkReducer.swift */,
+				A93AE83D2A342EB500AFFF9C /* DrinksReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		A9CE66172A2BFCC60085444D = {
+			isa = PBXGroup;
+			children = (
+				A9CE66222A2BFCC60085444D /* BlueBottle */,
+				A9CE66332A2BFCC70085444D /* BlueBottleTests */,
+				A9CE663D2A2BFCC70085444D /* BlueBottleUITests */,
+				A9CE66212A2BFCC60085444D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9CE66212A2BFCC60085444D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9CE66202A2BFCC60085444D /* BlueBottle.app */,
+				A9CE66302A2BFCC70085444D /* BlueBottleTests.xctest */,
+				A9CE663A2A2BFCC70085444D /* BlueBottleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9CE66222A2BFCC60085444D /* BlueBottle */ = {
+			isa = PBXGroup;
+			children = (
+				A9CE66232A2BFCC60085444D /* BlueBottleApp.swift */,
+				A9CE66252A2BFCC60085444D /* ContentView.swift */,
+				A91214BB2A2F1C6600BAC86F /* HomeView.swift */,
+				A93AE8302A32188E00AFFF9C /* Cafe */,
+				A93AE82B2A30C29700AFFF9C /* Menu */,
+				A93AE8262A30BF5F00AFFF9C /* Model */,
+				A9CE664D2A2C05730085444D /* OrderView.swift */,
+				A9CE664F2A2C09A10085444D /* CupSelector.swift */,
+				A9CE66532A2C8E350085444D /* CoffeebeanSelector.swift */,
+				A9CE66512A2C0C670085444D /* MyCardView.swift */,
+				A9CE66272A2BFCC70085444D /* Assets.xcassets */,
+				A9CE66292A2BFCC70085444D /* Preview Content */,
+			);
+			path = BlueBottle;
+			sourceTree = "<group>";
+		};
+		A9CE66292A2BFCC70085444D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A9CE662A2A2BFCC70085444D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A9CE66332A2BFCC70085444D /* BlueBottleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9CE66342A2BFCC70085444D /* BlueBottleTests.swift */,
+			);
+			path = BlueBottleTests;
+			sourceTree = "<group>";
+		};
+		A9CE663D2A2BFCC70085444D /* BlueBottleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9CE663E2A2BFCC70085444D /* BlueBottleUITests.swift */,
+				A9CE66402A2BFCC70085444D /* BlueBottleUITestsLaunchTests.swift */,
+			);
+			path = BlueBottleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9CE661F2A2BFCC60085444D /* BlueBottle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CE66442A2BFCC70085444D /* Build configuration list for PBXNativeTarget "BlueBottle" */;
+			buildPhases = (
+				A9CE661C2A2BFCC60085444D /* Sources */,
+				A9CE661D2A2BFCC60085444D /* Frameworks */,
+				A9CE661E2A2BFCC60085444D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueBottle;
+			packageProductDependencies = (
+				A93AE8382A342C8900AFFF9C /* ComposableArchitecture */,
+			);
+			productName = BlueBottle;
+			productReference = A9CE66202A2BFCC60085444D /* BlueBottle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9CE662F2A2BFCC70085444D /* BlueBottleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CE66472A2BFCC70085444D /* Build configuration list for PBXNativeTarget "BlueBottleTests" */;
+			buildPhases = (
+				A9CE662C2A2BFCC70085444D /* Sources */,
+				A9CE662D2A2BFCC70085444D /* Frameworks */,
+				A9CE662E2A2BFCC70085444D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9CE66322A2BFCC70085444D /* PBXTargetDependency */,
+			);
+			name = BlueBottleTests;
+			productName = BlueBottleTests;
+			productReference = A9CE66302A2BFCC70085444D /* BlueBottleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9CE66392A2BFCC70085444D /* BlueBottleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CE664A2A2BFCC70085444D /* Build configuration list for PBXNativeTarget "BlueBottleUITests" */;
+			buildPhases = (
+				A9CE66362A2BFCC70085444D /* Sources */,
+				A9CE66372A2BFCC70085444D /* Frameworks */,
+				A9CE66382A2BFCC70085444D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9CE663C2A2BFCC70085444D /* PBXTargetDependency */,
+			);
+			name = BlueBottleUITests;
+			productName = BlueBottleUITests;
+			productReference = A9CE663A2A2BFCC70085444D /* BlueBottleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9CE66182A2BFCC60085444D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					A9CE661F2A2BFCC60085444D = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					A9CE662F2A2BFCC70085444D = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A9CE661F2A2BFCC60085444D;
+					};
+					A9CE66392A2BFCC70085444D = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A9CE661F2A2BFCC60085444D;
+					};
+				};
+			};
+			buildConfigurationList = A9CE661B2A2BFCC60085444D /* Build configuration list for PBXProject "BlueBottle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9CE66172A2BFCC60085444D;
+			packageReferences = (
+				A93AE8372A342C8900AFFF9C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = A9CE66212A2BFCC60085444D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9CE661F2A2BFCC60085444D /* BlueBottle */,
+				A9CE662F2A2BFCC70085444D /* BlueBottleTests */,
+				A9CE66392A2BFCC70085444D /* BlueBottleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9CE661E2A2BFCC60085444D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CE662B2A2BFCC70085444D /* Preview Assets.xcassets in Resources */,
+				A9CE66282A2BFCC70085444D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CE662E2A2BFCC70085444D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CE66382A2BFCC70085444D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9CE661C2A2BFCC60085444D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93AE83B2A342D6200AFFF9C /* DrinkReducer.swift in Sources */,
+				A9CE66542A2C8E350085444D /* CoffeebeanSelector.swift in Sources */,
+				A93AE82D2A30C2BC00AFFF9C /* MenuCateogyColumn.swift in Sources */,
+				A91214BC2A2F1C6600BAC86F /* HomeView.swift in Sources */,
+				A9CE664E2A2C05730085444D /* OrderView.swift in Sources */,
+				A93AE83E2A342EB500AFFF9C /* DrinksReducer.swift in Sources */,
+				A93AE8362A33AF4300AFFF9C /* CafeList.swift in Sources */,
+				A9CE66502A2C09A10085444D /* CupSelector.swift in Sources */,
+				A93AE82F2A30C2DE00AFFF9C /* CategorySelector.swift in Sources */,
+				A93AE8322A339E3400AFFF9C /* Cafe.swift in Sources */,
+				A91214C02A2F20A700BAC86F /* MenuView.swift in Sources */,
+				A93AE8342A33AA5D00AFFF9C /* CafeRow.swift in Sources */,
+				A9CE66262A2BFCC60085444D /* ContentView.swift in Sources */,
+				A93AE82A2A30C28400AFFF9C /* DrinkRow.swift in Sources */,
+				A9CE66522A2C0C670085444D /* MyCardView.swift in Sources */,
+				A91214BE2A2F209900BAC86F /* DrinkList.swift in Sources */,
+				A93AE8282A30BF6C00AFFF9C /* Drink.swift in Sources */,
+				A9CE66242A2BFCC60085444D /* BlueBottleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CE662C2A2BFCC70085444D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CE66352A2BFCC70085444D /* BlueBottleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CE66362A2BFCC70085444D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CE66412A2BFCC70085444D /* BlueBottleUITestsLaunchTests.swift in Sources */,
+				A9CE663F2A2BFCC70085444D /* BlueBottleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9CE66322A2BFCC70085444D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CE661F2A2BFCC60085444D /* BlueBottle */;
+			targetProxy = A9CE66312A2BFCC70085444D /* PBXContainerItemProxy */;
+		};
+		A9CE663C2A2BFCC70085444D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CE661F2A2BFCC60085444D /* BlueBottle */;
+			targetProxy = A9CE663B2A2BFCC70085444D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A9CE66422A2BFCC70085444D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9CE66432A2BFCC70085444D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9CE66452A2BFCC70085444D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlueBottle/Preview Content\"";
+				DEVELOPMENT_TEAM = 77CD4KLN3Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaesung.swiftui.tca.study.BlueBottle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9CE66462A2BFCC70085444D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlueBottle/Preview Content\"";
+				DEVELOPMENT_TEAM = 77CD4KLN3Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaesung.swiftui.tca.study.BlueBottle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9CE66482A2BFCC70085444D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77CD4KLN3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaesung.swiftui.tca.study.BlueBottleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueBottle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlueBottle";
+			};
+			name = Debug;
+		};
+		A9CE66492A2BFCC70085444D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77CD4KLN3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaesung.swiftui.tca.study.BlueBottleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueBottle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlueBottle";
+			};
+			name = Release;
+		};
+		A9CE664B2A2BFCC70085444D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77CD4KLN3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaesung.swiftui.tca.study.BlueBottleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlueBottle;
+			};
+			name = Debug;
+		};
+		A9CE664C2A2BFCC70085444D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77CD4KLN3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaesung.swiftui.tca.study.BlueBottleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlueBottle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9CE661B2A2BFCC60085444D /* Build configuration list for PBXProject "BlueBottle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CE66422A2BFCC70085444D /* Debug */,
+				A9CE66432A2BFCC70085444D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CE66442A2BFCC70085444D /* Build configuration list for PBXNativeTarget "BlueBottle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CE66452A2BFCC70085444D /* Debug */,
+				A9CE66462A2BFCC70085444D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CE66472A2BFCC70085444D /* Build configuration list for PBXNativeTarget "BlueBottleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CE66482A2BFCC70085444D /* Debug */,
+				A9CE66492A2BFCC70085444D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CE664A2A2BFCC70085444D /* Build configuration list for PBXNativeTarget "BlueBottleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CE664B2A2BFCC70085444D /* Debug */,
+				A9CE664C2A2BFCC70085444D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A93AE8372A342C8900AFFF9C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = prerelease/1.0;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A93AE8382A342C8900AFFF9C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A93AE8372A342C8900AFFF9C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A9CE66182A2BFCC60085444D /* Project object */;
+}
