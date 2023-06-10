@@ -19,8 +19,8 @@ struct DrinkList: View {
                         state: \.drinks,
                         action: DrinksReducer.Action.drink
                     )
-                ) {
-                    DrinkRow(store: $0)
+                ) { drinkStore in
+                    DrinkRow(store: drinkStore)
                         .listRowSeparator(.hidden)
                 }
             }

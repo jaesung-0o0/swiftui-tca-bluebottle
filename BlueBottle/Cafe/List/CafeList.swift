@@ -28,7 +28,7 @@ struct CafeList: View {
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Text("카페")
-                        .font(.title3.bold())
+                        .font(.headline)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)

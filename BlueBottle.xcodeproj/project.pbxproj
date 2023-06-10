@@ -25,6 +25,7 @@
 		A93AE8452A347FC800AFFF9C /* MenuReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8442A347FC800AFFF9C /* MenuReducer.swift */; };
 		A93AE8472A34831600AFFF9C /* CafesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8462A34831600AFFF9C /* CafesReducer.swift */; };
 		A93AE8492A34831D00AFFF9C /* CafeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE8482A34831D00AFFF9C /* CafeReducer.swift */; };
+		A93AE84D2A34DC7200AFFF9C /* DrinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AE84C2A34DC7200AFFF9C /* DrinkDetailView.swift */; };
 		A9CE66242A2BFCC60085444D /* BlueBottleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66232A2BFCC60085444D /* BlueBottleApp.swift */; };
 		A9CE66262A2BFCC60085444D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE66252A2BFCC60085444D /* ContentView.swift */; };
 		A9CE66282A2BFCC70085444D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CE66272A2BFCC70085444D /* Assets.xcassets */; };
@@ -73,6 +74,7 @@
 		A93AE8442A347FC800AFFF9C /* MenuReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuReducer.swift; sourceTree = "<group>"; };
 		A93AE8462A34831600AFFF9C /* CafesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesReducer.swift; sourceTree = "<group>"; };
 		A93AE8482A34831D00AFFF9C /* CafeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeReducer.swift; sourceTree = "<group>"; };
+		A93AE84C2A34DC7200AFFF9C /* DrinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailView.swift; sourceTree = "<group>"; };
 		A9CE66202A2BFCC60085444D /* BlueBottle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueBottle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CE66232A2BFCC60085444D /* BlueBottleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBottleApp.swift; sourceTree = "<group>"; };
 		A9CE66252A2BFCC60085444D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				A93AE83C2A342D6A00AFFF9C /* Reducer */,
 				A91214BD2A2F209900BAC86F /* DrinkList.swift */,
 				A93AE8292A30C28400AFFF9C /* DrinkRow.swift */,
+				A93AE84C2A34DC7200AFFF9C /* DrinkDetailView.swift */,
 				A91214BF2A2F20A700BAC86F /* MenuView.swift */,
 				A93AE82C2A30C2BC00AFFF9C /* MenuCateogyColumn.swift */,
 				A93AE82E2A30C2DE00AFFF9C /* CategorySelector.swift */,
@@ -405,6 +408,7 @@
 				A9CE66522A2C0C670085444D /* MyCardView.swift in Sources */,
 				A91214BE2A2F209900BAC86F /* DrinkList.swift in Sources */,
 				A93AE8282A30BF6C00AFFF9C /* Drink.swift in Sources */,
+				A93AE84D2A34DC7200AFFF9C /* DrinkDetailView.swift in Sources */,
 				A93AE8402A34752200AFFF9C /* AppReducer.swift in Sources */,
 				A9CE66242A2BFCC60085444D /* BlueBottleApp.swift in Sources */,
 			);

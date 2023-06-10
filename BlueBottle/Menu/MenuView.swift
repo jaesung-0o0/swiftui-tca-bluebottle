@@ -10,12 +10,13 @@ import ComposableArchitecture
 
 struct MenuView: View {
     @State private var selectedCategory: String = "추천"
+    @State private var addedDrinks: [Drink] = []
     
     let store: StoreOf<MenuReducer>
     
     var body: some View {
         WithViewStore(self.store, observe: { $0 }) { viewStore in
-            VStack {
+            VStack(spacing: 0) {
                 CategorySelector(selectedCategory: $selectedCategory)
                 
                 DrinkList(
@@ -24,7 +25,32 @@ struct MenuView: View {
                         reducer: { DrinksReducer() }
                     )
                 )
+                
+                if !addedDrinks.isEmpty {
+                    Button {
+                        // TODO: 결제
+                    } label: {
+                        HStack {
+                            Spacer()
+                            
+                            Text("3 잔")
+                                .font(.footnote)
+                            
+                            Text("총 15000 원")
+                        }
+                        .foregroundColor(.white)
+                        .padding(.vertical, 32)
+                        .padding(.bottom, 32)
+                        .padding(.horizontal, 16)
+                        .background {
+                            Color("bluebottle.blue")
+                                .frame(width: UIScreen.main.bounds.width)
+                        }
+                    }
+                    .buttonStyle(.plain)
+                }
             }
+            .ignoresSafeArea(edges: [.bottom])
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
@@ -34,7 +60,7 @@ struct MenuView: View {
                         } label: {
                             HStack {
                                 Text(viewStore.selectedCafe?.name ?? "카페를 선택해주세요")
-                                    .font(.title3.bold())
+                                    .font(.headline)
                                 
                                 Image(systemName: "chevron.down")
                                     .font(.caption)
