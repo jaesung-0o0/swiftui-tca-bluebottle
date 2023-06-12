@@ -9,8 +9,6 @@ import SwiftUI
 import ComposableArchitecture
 
 struct DrinkRow: View {
-    @State private var selectedDrink: Drink?
-    
     let store: StoreOf<DrinkReducer>
     
     var body: some View {
@@ -47,10 +45,7 @@ struct DrinkRow: View {
                 .padding(.horizontal, 12)
             }
             .onTapGesture {
-                selectedDrink = viewStore.state
-            }
-            .sheet(item: $selectedDrink) { selectedDrink in
-                DrinkDetailView(drink: selectedDrink)
+                viewStore.send(.rowTapped)
             }
         }
     }

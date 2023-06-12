@@ -13,6 +13,7 @@ struct MenuReducer: Reducer {
         @PresentationState var cafeSelection: CafesReducer.State?
         var selectedCafe: Cafe?
         var drinks = DrinksReducer.State()
+        var addedDrinks: [Drink.ID: Int] { drinks.addedDrinks }
     }
     
     enum Action {
@@ -27,12 +28,15 @@ struct MenuReducer: Reducer {
             case .cafePresenterButtonTapped:
                 state.cafeSelection = CafesReducer.State(selectedCafe: state.selectedCafe)
                 return .none
+                
             case let .cafeSelection(.presented(.delegate(.selectCafe(cafe)))):
                 state.selectedCafe = cafe
                 state.cafeSelection = nil
                 return .none
+                
             case .cafeSelection:
                 return .none
+                
             case .drinks:
                 return .none
             }

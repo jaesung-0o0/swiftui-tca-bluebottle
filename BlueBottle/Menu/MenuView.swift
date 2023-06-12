@@ -10,7 +10,6 @@ import ComposableArchitecture
 
 struct MenuView: View {
     @State private var selectedCategory: String = "추천"
-    @State private var addedDrinks: [Drink] = []
     
     let store: StoreOf<MenuReducer>
     
@@ -26,7 +25,7 @@ struct MenuView: View {
                     )
                 )
                 
-                if !addedDrinks.isEmpty {
+                if !viewStore.addedDrinks.compactMap({ $1 }).isEmpty {
                     Button {
                         // TODO: 결제
                     } label: {
